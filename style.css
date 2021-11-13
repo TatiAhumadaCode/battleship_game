@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400;600;700&display=swap');
+
+
+:root {
+    --ships-color: #3e3330;
+    --miss-color:  #922b21;
+    --boom-color:  #196f3d;
+    --user-color: #dad1cf;
+    --computer-color: #df99f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Signika', sans-serif;
+}
+
+body {
+    background: rgb(179,135,154);
+    background: radial-gradient(circle, rgba(179,135,154,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+main {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+header {
+    height: 70px;
+    text-align: center;
+    line-height: 2;
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containers-text {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-user {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--user-color);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.grid div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--ships-color);
+    border-radius: 2px;
+}
+
+.grid div:hover {
+    background-color: lightblue;
+}
+
+.grid-computer {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--computer-color);
+    margin: 10px;
+    cursor: pointer;
+}
+
+.favicons {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.favicons span {
+    padding-right: 15px;
+}
+
+.fas-miss {
+    color: var(--miss-color);
+}
+
+.fas-boom {
+    color: var(--boom-color);
+}
+
+h3 {
+    padding-top: 5px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.grid-display {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ship div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--ships-color);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.hidden-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.buttons-div button {
+    padding: 5px;
+    background: transparent;
+    border: 2px solid var(--ships-color);
+    border-radius: 6px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+
+.destroyer-container {
+    width: 80px;
+    height: 40px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+.destroyer-container-vertical {
+    width: 40px;
+    height: 80px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.submarine-container {
+    width: 120px;
+    height: 40px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+.submarine-container-vertical {
+    width: 40px;
+    height: 120px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cruiser-container {
+    width: 120px;
+    height: 40px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+.cruiser-container-vertical {
+    width: 40px;
+    height: 120px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.battleship-container {
+    width: 160px;
+    height: 40px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+.battleship-container-vertical {
+    width: 40px;
+    height: 160px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carrier-container {
+    width: 200px;
+    height: 40px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+.carrier-container-vertical {
+    width: 40px;
+    height: 200px;
+    background-color: var(--computer-color);
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.destroyer {
+    background-color: var(--computer-color);
+}
+
+.submarine {
+    background-color: var(--computer-color);
+}
+
+.cruiser {
+    background-color: var(--computer-color);
+}
+
+.battleship {
+    background-color: var(--computer-color);
+}
+
+.carrier {
+    background-color: var(--computer-color);
+}
+
+.boom {
+    background-color: var(--boom-color);
+}
+
+.miss {
+    background-color: var(--miss-color);
+}
+
+
+/* ##adaeaf; */
